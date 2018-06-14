@@ -1,7 +1,9 @@
 <h1>Welcome to Bathroom Ai</h1>
 
-  <% @rooms.each do |room| %>
-    <%= room.name %>
-    <%= room.occupied %>
-  <% end %>
+<% @rooms.each do |room| %>
+  <div>
+    <span> <%= room.name %></span>
+    <span class="status <%= occupied_class(room.occupied) %>"</span>
+  </div>
+<% end %>
 
