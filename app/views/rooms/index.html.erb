@@ -1,2 +1,7 @@
 <h1>Welcome to Bathroom Ai</h1>
 
+  <% @rooms.each do |room| %>
+    <%= room.name %>
+    <%= room.occupied %>
+  <% end %>
+
