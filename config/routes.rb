@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   root 'rooms#index'
 
   namespace :api, defaults: { format: :json } do
-    resources :occupations, only: [:index]
+    resources :rooms, only: [:index] do
+
+      post 'occupy', to: 'rooms#occupy'
+      post 'free', to: 'rooms#free'
+    end
   end
 
 

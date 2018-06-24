@@ -4,7 +4,7 @@
   <div>
     <span> <%= room.name %></span>
     <span class="status <%= occupied_class(room.occupied) %>"</span>
-    <span class="status"><%= room.occupied %></span>
+    <span><%= occupied_message(room.occupied) %></span>
   </div>
 <% end %>
 <%= @cookies %>
