@@ -4,6 +4,17 @@
   <div>
     <span> <%= room.name %></span>
     <span class="status <%= occupied_class(room.occupied) %>"</span>
+    <span class="status"><%= room.occupied %></span>
   </div>
 <% end %>
+<%= @cookies %>
+
+<script>
+window.onload = function() {
+  setTimeout(function(){
+  window.location.reload();
+  console.log("Reload")
+}, 1000);
+};
+</script>
 
