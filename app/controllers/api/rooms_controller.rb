@@ -1,6 +1,6 @@
 class Api::RoomsController < ApplicationController
 
-  before_action :restrict_access
+  # before_action :restrict_access
 
   def index
     @rooms = Room.all.order(:id)
