@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       post 'occupy', to: 'rooms#occupy'
       post 'free', to: 'rooms#free'
     end
+
+    resources :stats, only: [:index]
   end
 
 
